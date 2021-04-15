@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Register Page</title>
+  </head>
+  <body>
+    <div class="glass"></div>
+    <div class="bg-img">
+      <img src="img/background.jpg" alt="" />
+    </div>
+
+    <div class="form-container">
+      <section>
+        <div>
+          <h1>Register</h1>
+        </div>
+
+        <form action="/register" method="POST" class="form">
+          <div>
+            <label for="name">Name</label>
+            <br />
+            <br />
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">E-mail</label>
+            <br />
+            <br />
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <br />
+            <br />
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button class="btn-submit" type="submit">Register</button>
+        </form>
+
+        <p>
+          Have an Account?
+          <a href="/login">Login</a>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

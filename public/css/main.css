@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.glass {
+  position: absolute;
+  pointer-events: none;
+  height: 80%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  backdrop-filter: blur(7px);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container,
+.container {
+  position: relative;
+  color: #fff;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+section {
+  width: 350px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+section > div {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 0px;
+  border-bottom: 2px solid black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form > div {
+  height: 90px;
+  width: 100%;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.btn-submit {
+  outline: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 0px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: black;
+}
+
+p {
+  text-align: center;
+  padding-top: 30px;
+}
+
+p a {
+  color: rgb(28, 209, 37);
+}
+
+.container {
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.btn-logout {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 999;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
